@@ -176,8 +176,8 @@ i{
 /* Bloque 1 */
 .bloque-1{
     display: flex;
-    padding-top: 5%;
-    padding-left: 10%;
+    padding-top: 8%;
+    padding-left: 15%;
     padding-bottom: 10%; 
 }
 .titulo-1{
@@ -315,6 +315,19 @@ i{
     gap: 2rem;
     padding: 0 2rem;
 }
+.contenedor-flex iframe{
+    position: absolute;
+    width: 19%;
+    height: 95%;
+    left: 12rem;
+    top: 1rem;
+    z-index: 1;
+    border-radius: 30px;
+}
+.contenedor-flex .celu{
+    pointer-events: none;
+    z-index: 2;
+}
 .contenedor-flex h2{
     font-size: 38px;
     color: var(--negro);
@@ -406,6 +419,67 @@ i{
 .contenedor-botones p{
     color: var(--principal);
 }
+.combo{
+    display: flex;
+    height: 20rem;
+}
+/* .combo .chica{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+.combo .cohete{
+    position: absolute;
+    top: 0;
+    right: 27rem;
+    transition: 1s;
+} */
+.combo .chica{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+    transition: var(--transicion);
+
+}
+    
+.combo .cohete{
+    position: absolute;
+    top: 0;
+    right: 27rem;
+    transition: var(--transicion);
+
+}
+.combo:hover .chica {
+    animation: cambio-forma 2s infinite;
+}
+    
+.combo:hover .cohete {
+    animation: mover-cohete 2s infinite;
+}
+    
+@keyframes cambio-forma {
+    from {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    to {
+        border-radius: 40% 70% 75% 35% / 40% 30% 70% 70%;
+    }
+}
+@keyframes mover-cohete {
+    from {
+        top: 0;
+        right: 27rem;
+    }
+    to {
+        top: -7rem;
+        right:20rem;
+    }
+}
+/* .combo:hover .chica {
+    border-radius: 40% 70% 75% 35% / 40% 30% 70% 70%;
+}
+.combo:hover .cohete{
+    right:20rem;
+    top: -7rem;
+} */
 @media (max-width: 1200px) {
     .contenedor-3{
         flex-direction: column;
@@ -480,11 +554,12 @@ i{
 }
 .cuadro:hover{
     transform: scale(1.05);
-    box-shadow: 0px 0px 8px #aaa,
+    box-shadow: 0px 9px 25px -6px rgb(0 0 0 / 30%);
+    /* box-shadow: 0px 0px 8px #aaa,
                   0px 0px 8px #aaa,
                   0px 0px 8px #aaa,
-                  0px 0px 8px #aaa;
-    border-radius: 10px;
+                  0px 0px 8px #aaa; */
+    /* border-radius: 10px; */
 }
 .cuadro img{
     height: 4rem;
