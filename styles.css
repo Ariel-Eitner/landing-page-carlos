@@ -423,34 +423,22 @@ i{
     display: flex;
     height: 20rem;
 }
-/* .combo .chica{
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
-}
-.combo .cohete{
-    position: absolute;
-    top: 0;
-    right: 27rem;
-    transition: 1s;
-} */
 .combo .chica{
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
     transition: var(--transicion);
-
-}
-    
+    animation-fill-mode: forwards;
+}    
 .combo .cohete{
     position: absolute;
     top: 0;
     right: 27rem;
     transition: var(--transicion);
-
+    animation-fill-mode: forwards;
 }
 .combo:hover .chica {
     animation: cambio-forma 2s infinite;
-}
-    
+}    
 .combo:hover .cohete {
     animation: mover-cohete 2s infinite;
 }
@@ -473,13 +461,7 @@ i{
         right:20rem;
     }
 }
-/* .combo:hover .chica {
-    border-radius: 40% 70% 75% 35% / 40% 30% 70% 70%;
-}
-.combo:hover .cohete{
-    right:20rem;
-    top: -7rem;
-} */
+
 @media (max-width: 1200px) {
     .contenedor-3{
         flex-direction: column;
