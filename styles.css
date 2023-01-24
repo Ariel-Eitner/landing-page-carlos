@@ -332,14 +332,15 @@ i{
 }  */
 .framee::-webkit-scrollbar {
     width: .5rem;
-    background-color: var(--blanco);
+    background-color: white;
 }
 .framee::-webkit-scrollbar-thumb {
     background-color: var(--principal);
 }
-/* .framee p{
-    padding: 7%;
-} */
+.framee {
+    background-color: white;
+    padding: 0;
+} 
 
 .contenedor-flex .celu{
     position: relative;
@@ -373,6 +374,7 @@ i{
     height: 0;
     padding-bottom: 41%;
     width: 21%;
+    
 }
 .celu{
     position: absolute;
@@ -384,8 +386,9 @@ i{
     display: block;
     top: 1rem;;
     left: 0;
-    width: 94%;
+    width: 95%;
     height: 99%;
+    border-radius: 30px;
 }
 @media (max-width: 1200px) {
     .titulo-2 svg{
