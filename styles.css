@@ -462,11 +462,11 @@ i{
     }     
     .contenedor-iframe{
         margin-top: 10rem;
-        height: 41%;
-        width: 82%;
+        height: auto;
+        width: 100%;
     }
     .contenedor-iframe iframe{
-        height: 79%;
+        height: 81%;
         padding: 1rem;
         width: 100%;
     }
