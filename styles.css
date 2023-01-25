@@ -449,10 +449,11 @@ i{
     }
     .contenedor-iframe{
         height: 37rem;
-        width: 51%; 
+        width: 60%; 
     } 
     .contenedor-iframe iframe{
-        width: 100%;
+        /* width: 101%; */
+        padding: 1rem;
     }
 }
 @media (max-width: 576px) {
@@ -465,8 +466,9 @@ i{
         width: 82%;
     }
     .contenedor-iframe iframe{
-        height: 75%;
-        width: 96%;
+        height: 79%;
+        padding: 1rem;
+        width: 100%;
     }
 
 }
