@@ -467,7 +467,7 @@ i{
     }
     .contenedor-iframe iframe{
         height: 81%;
-        padding: 1rem;
+        padding: 0.5rem;
         width: 100%;
     }
 
