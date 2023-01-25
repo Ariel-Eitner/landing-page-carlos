@@ -145,9 +145,9 @@ i{
     }
 }
 @media (max-width: 576px) {
-    .nav{
+    /* .nav{
         width: 95%;
-    }    
+    }     */
 }
 
 /* Imagen Fondo */
@@ -170,11 +170,15 @@ i{
 }
 /* Bloque */
 .bloque{
+    position: absolute;
+    width: 100%;
     position: relative;
     z-index: 2;
 }
 /* Bloque 1 */
 .bloque-1{
+    position: relative;
+    width: 100%;
     display: flex;
     padding-top: 8%;
     padding-left: 15%;
@@ -453,8 +457,12 @@ i{
         width: 60%; 
     } 
     .contenedor-iframe iframe{
-        /* width: 101%; */
+        height: 123%;
         padding: 1rem;
+        border-radius: 40px;
+    }
+    .contenido {
+        padding-top: 10rem;
     }
 }
 @media (max-width: 576px) {
@@ -692,8 +700,7 @@ i{
 }
 @media (max-width: 576px) {
     .grid{
-        margin: 2rem 1rem;
-        /* width: 99%; */
+        padding: 0;
     }
     .cuadro{
         height: 270px;
